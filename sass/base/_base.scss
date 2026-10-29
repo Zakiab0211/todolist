@@ -1,0 +1,29 @@
+@use 'sass:map';
+@use '../abstracts' as *;
+
+
+html {
+    box-sizing: border-box;
+/* Targets Blink and Webkit Engine */
+  -webkit-font-smoothing: antialiased;
+
+  /* Targets Gecko Engine */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $font-body;
+    font-size: 16px;
+    line-height: 1.4;
+    background: map.get($color-neutral, 100);
+    
+}
+
+button, input {
+    font-family: inherit;
+    font-size: inherit;
+}

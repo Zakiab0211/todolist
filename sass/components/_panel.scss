@@ -1,0 +1,25 @@
+@use 'sass:map';
+@use '../abstracts' as *;
+
+
+.panel {
+    // display:flex;
+    // flex-direction: column;
+    // overflow: hidden;
+
+    $padding: 12px;
+    border-radius: 16px;
+    background: #fff;
+    border: 1px solid map.get($color-neutral, 100);
+    
+    &__header {
+        padding: $padding;
+        border-bottom: 1px solid map.get($color-neutral, 100);
+    }
+
+    &__body {
+        height: 359px;
+        overflow-y: scroll;
+        padding: $padding;
+    }
+}

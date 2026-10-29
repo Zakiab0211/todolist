@@ -1,0 +1,56 @@
+@use 'sass:map';
+@use '../abstracts/' as *;
+
+.stat-grid {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.stat-widget {
+    flex: 1;
+    padding: 12px;
+    border-radius: 12px;
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__label {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    &__value {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    &--purple {
+        background-image: linear-gradient(#CF8BF9, #B264FD);
+
+        .stat-widget__label, .stat-widget__value {
+            color: #F2C7FF;
+        }
+
+    }
+
+    &--blue {
+        background-image: linear-gradient(#5F98FF, #1865D5);
+        
+        .stat-widget__label, .stat-widget__value {
+            color: #82D0FF;
+        }
+    }
+
+    &--green {
+        background-image: linear-gradient(#85E980, #4D9A44);
+
+        .stat-widget__label, .stat-widget__value {
+            color: #D4F5D0;
+        }
+    }
+}

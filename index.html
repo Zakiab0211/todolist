@@ -1,0 +1,119 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="todo-island">
+        <div class="todo-island__title">
+            <h1>Todolist</h1>
+        </div>
+        <div class="todo-island__header">
+            <div class="stat-grid">
+                <div class="stat-widget stat-widget--purple">
+                    <div class="stat-widget__icon">
+                        <img src="img/icon-task.svg" alt="task">
+                    </div>
+                    <div class="stat-widget__info">
+                        <span class="stat-widget__label">Task</span>
+                        <span class="stat-widget__value" id="stat-total">0</span>
+                    </div>
+                </div>
+                <div class="stat-widget stat-widget--blue">
+                    <div class="stat-widget__icon">
+                        <img src="img/icon-active.svg" alt="active">
+                    </div>
+                    <div class="stat-widget__info">
+                        <span class="stat-widget__label">Active</span>
+                        <span class="stat-widget__value" id="stat-active">0</span>
+                    </div>
+                </div>
+                <div class="stat-widget stat-widget--green">
+                    <div class="stat-widget__icon">
+                        <img src="img/icon-done.svg" alt="done">
+                    </div>
+                    <div class="stat-widget__info">
+                        <span class="stat-widget__label">Done</span>
+                        <span class="stat-widget__value" id="stat-done">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="todo-island__form">
+            <form class="task-form" >
+                <div class="task-input">
+                    <span class="task-input__icon">
+                        <img src="img/icon-pen.svg" alt="Pen Icon">
+                    </span>
+                    <input type="text" class="task-input__field" placeholder="Add a new task..." autocomplete="off" required/>
+                </div>
+                <button class="btn btn--disabled"><img src="img/icon-plus.svg" alt="icon plus"/>Add</button>
+            </form>
+        </div>
+
+        <div class="todo-island__body">
+            <div class="panel">
+                <div class="panel__header">
+                    <div class="segmented-control">
+                        <!-- <button class="segmented-control__segment segmented-control__segment--selected" data-filter="all">All</button>
+                        <button class="segmented-control__segment" data-filter="active">Active</button>
+                        <button class="segmented-control__segment" data-filter="complete">Completed</button> -->
+                    </div>
+                </div>
+                <div class="panel__body">
+                    <ul class="task-list" id="task-container">
+                        
+                        <!-- <li class="task-item">
+                            <div class="checkbox"></div>
+                                <div class="task-item__label">Implementasi halaman Register</div>
+                        </li>
+                            <li class="task-item task-item--selected">
+                                <div class="checkbox checkbox--checked"></div>
+                                <div class="task-item__label">Build halaman Dashboard</div>
+                            </li>
+                            <li class="task-item">
+                                <div class="checkbox"></div>
+                                <div class="task-item__label">Komponen To-Do List</div>
+                            </li> -->
+
+
+                            <!-- <li class="task-item task-item--completed task-item--editing" data-id="xxx">
+                                <span class="checkbox checkbox--selected"></span>
+
+                                <div class="task-item__form">
+                                    <input type="text" value="Do homework" class="task-item__form-input">
+                                    <div class="task-item__form-actions">
+                                        <button class="task-item__form-action task-item__form-action--confirm"></button>
+                                        <button class="task-item__form-action task-item__form-action--cancel"></button>
+                                    </div>
+                                </div>
+
+                                <div class="task-item__content">
+                                    <span class="task-item__label">Do Homework</span>
+                                    <div class="task-item__actions">
+                                        <button class="task-item__action task-item__action--edit"></button>
+                                        <button class="task-item__action task-item__action--delete"></button>
+                                    </div>
+                                </div> -->
+
+                            </li>
+                    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="scripts/index.js"></script>
+</body>
+</html>

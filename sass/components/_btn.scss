@@ -1,0 +1,23 @@
+@use 'sass:map';
+@use '../abstracts/' as *; 
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: inherit;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #fff;
+    background-color: map.get($color-neutral, 900);
+    cursor: pointer;
+
+    &--disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+    
+}
